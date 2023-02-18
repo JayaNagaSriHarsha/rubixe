@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2c822c3586.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="bg-image">
+                    <a class="navbar-brand" href="#"><img src="data:image/jpeg;base64,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" class="rubixe-logo mr-3" /> <span class="Rubixe-name">Rubixe</span></a>
+                    <hr class="hr-line" />
+                    <h6 class="hr-line-text">Disruptive Technologies at Work</h6>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mr-3" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link" href="#carousel-inner">HOME</a>
+                        <a class="nav-link" href="#who-we-are-section">SERVICES</a>
+                        <a class="nav-link" href="#">PRODUCTS</a>
+                        <a class="nav-link" href="#INITIATIVE">AI INTERNSHIP</a>
+                        <a class="nav-link" href="#">CAREER</a>
+                        <a class="nav-link" href="#">BLOG</a>
+                        <a class="nav-link" href="#contact-page">CONTACT US</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel_slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" id="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.pexels.com/photos/919734/pexels-photo-919734.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-cor d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <img src="https://api.logo.com/api/v2/images?logo=logo_19d3d4b9-3b50-416f-abee-52996dbfb4b8&format=webp&margins=0&quality=60&width=500&background=transparent&u=1676626655" class="tt-logo" />
+                        <h2 class="carousel-caption1">TECH FOR TEENS</h2>
+                        <p class="carousel-caption2">CARVING FUTURE TECHNOLOGY PROFESSIONALS OUT OF YOUNG MINDS</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/8721340/pexels-photo-8721340.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-cor d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <img src="https://api.logo.com/api/v2/images?logo=logo_19d3d4b9-3b50-416f-abee-52996dbfb4b8&format=webp&margins=0&quality=60&width=500&background=transparent&u=1676626847" class="tt-logo" />
+                        <h2 class="carousel-caption1">TECH FOR TEENS</h2>
+                        <p class="carousel-caption2">CARVING FUTURE TECHNOLOGY PROFESSIONALS OUT OF YOUNG MINDS</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/3862618/pexels-photo-3862618.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-cor d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <img src="https://api.logo.com/api/v2/images?logo=logo_19d3d4b9-3b50-416f-abee-52996dbfb4b8&format=webp&margins=0&quality=60&width=500&background=transparent&u=1676626969" class="tt-logo" />
+                        <h2 class="carousel-caption1">TECH FOR TEENS</h2>
+                        <p class="carousel-caption2">CARVING FUTURE TECHNOLOGY PROFESSIONALS OUT OF YOUNG MINDS</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+
+
+        <div class="who-we-are-section pt-5 pb-5" id="who-we-are-section">
+            <div class="container d-flex">
+                <div class="row">
+                    <div class="col-12 col-md-8 order-1 d-flex flex-column justify-content-center">
+                        <h1 class="who-we-are-section-heading ">
+                            WHO WE ARE
+                        </h1>
+                        <p>Rubixe is a global technology company specializing in disruptive technologies - Artificial Intelligence (AI), Machine Learning, Robotic Process Automation (RPA, Block Chain, and Internet of Things(IOT).</p>
+                        <p>Rubixe mission is to enable businesses to leverage the full potential of disruptive technologies and stay competitive in the market, turning complex challenges into solutions, providing a strategic competitive advantage that are more efficient, effective and predictable.</p>
+
+
+                    </div>
+                    <div class="col-12 col-md-4 order-md-2"><img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600" class="who-we-are-section-img d-none d-md-inline pr-3" /></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="where-we-started-section pt-5 pb-5">
+            <div class="container d-flex">
+                <div class="col-12  d-flex flex-column justify-content-center">
+                    <h1 class="where-we-started-section-heading ">
+                        WHERE WE STARTED
+                    </h1>
+                    <p>We started in 2015, With a passionate team who want to bring game-changing solutions through disrupting technologies. We expertise in delivering enterprise-level solutions in the field of Artificial Intelligence (AI), Cyber Security, Robotic Process Automation (RPA), Internet of Things (loT), and Blockchain technology.</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-container pt-5 pb-5" id="INITIATIVE">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <h1 class="heading-initiative">TECH FOR TEENS - A RUBIXE INITIATIVE</h1>
+
+                    </div>
+
+                    <div class="col-12 ">
+                        <div class="d-flex flex-row justify-content-between">
+                            <button id="aboutButton" class="p-3 button selected-button" onclick="About()">
+                                01
+                            </button>
+                            <button id="timeToVisitButton" class="p-3 button" onclick="visiting()">
+                                02
+                            </button>
+                            <button id="attractionsButton" class="p-3 button" onclick="Attractions()">
+                                03
+                            </button>
+                            <button id="attractionsButton_1" class="p-3 button" onclick="Attractions_1()">
+                                04
+                            </button>
+                            <button id="attractionsButton_2" class="p-3 button" onclick="Attractions_2()">
+                                05
+                            </button>
+                        </div>
+                        <div class="tabs-container">
+                            <div id="aboutTab" class="p-3">
+                                <div class="d-flex flex-row justify-content-center">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/5712/5712418.png" class="icon m-5" />
+                                </div>
+                                <p class="tab-content">
+                                    Introducing AI to children in an age appropriate manner.
+                                </p>
+                            </div>
+                            <div id="timeToVisitTab" class="p-3">
+                                <div class="d-flex flex-row justify-content-center">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/2752/2752761.png" class="icon m-5" />
+                                </div>
+                                <p class="tab-content">
+                                    Gain awareness on AI and build an interactive story around it.
+                                </p>
+                            </div>
+                            <div id="attractionsTab" class="p-3">
+                                <div class="d-flex flex-row justify-content-center">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/7383/7383238.png" class="icon m-5" />
+                                </div>
+                                <p class="tab-content">
+                                    Acquire programming skills in a user-friendly format.
+                                </p>
+                            </div>
+                            <div id="attractionsTab_1" class="p-3">
+                                <div class="d-flex flex-row justify-content-center">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/2980/2980556.png" class="icon m-5" />
+                                </div>
+                                <p class="tab-content">
+                                    Exposure to mini projects on diverse topics.
+                                </p>
+                            </div>
+                            <div id="attractionsTab_2" class="p-3">
+                                <div class="d-flex flex-row justify-content-center">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/8566/8566590.png" class="icon m-5" />
+                                </div>
+                                <p class="tab-content">
+                                    Train the teachers programme.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-page" id="contact-page">
+
+            <div class="get-in-touch text-center">
+
+                <h1 class="heading-contact">GET IN TOUCH</h1>
+                <P class="para-contact">Please complete the form and we will get back to you.</P>
+            </div>
+            <hr class="hr-line-contact" />
+            <div class="container ">
+                <h1 class="form-heading text-center">Contact Us</h1>
+                <form id="myForm">
+                    <div class="mb-3">
+                        <label for="name">Name*</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name" />
+                        <p class="errorMessage" id="nameErrorMsg"></p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">Email*</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter Your Email" />
+                        <p class="errorMessage" id="emailErrorMsg"></p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">Mobile Number</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter Your Mobile Number" />
+                        <p class="errorMessage" id="emailErrorMsg"></p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="status">Working Status</label>
+                        <select id="status" class="form-control">
+                            <option value="Active" selected>Active</option>
+                            <option value="Inactive">Inactive</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <h5>Gender</h5>
+                        <input type="radio" id="male" value="Male" class="ml-2" name="gender" checked />
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" value="Female" class=" ml-2" name="gender" />
+                        <label for="female">Female</label>
+
+                        <input type="radio" id="Transgender" value="Transgender" class="ml-2" name="gender" />
+                        <label for="Transgender">Others</label>
+
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Register Now</button>
+                </form>
+
+            </div>
+        </div>
+        <div class="follow-us-section mb-4" id="follow-us-section">
+            <div class="container ">
+                <div class="d-flex flex-row justify-content-between">
+
+                    <div class="follow-us-section-container m-3">
+                        <h3 class="About-us-heading ">About us</h3>
+                        <p class="About-us-para">Rubixe™ is a global technology company specializing in disruptive technologies – Artificial Intelligence (AI), Machine Learning, Robotic Process Automation (RPA), BlockChain and Internet of Things (IoT). Rubixe mission to enable businesses to leverage the full potential of disruptive technologies to stay competitive in the market.</p>
+                        <h4 class="About-us-heading mt-4">Follow us</h4>
+                        <div class="d-flex flex-row">
+
+                            <div class="follow-us-section-container">
+                                <i class="fab fa-twitter-square ion"></i>
+                            </div>
+
+                            <div class="follow-us-section-container">
+                                <i class="fab fa-instagram-square ion"></i>
+                            </div>
+
+                            <div class="follow-us-section-container">
+                                <i class="fab fa-linkedin ion"></i>
+                            </div>
+
+                            <div class="follow-us-section-container">
+                                <i class="fab fa-whatsapp-square ion"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+
+                    <div class="follow-us-section-container m-4">
+                        <h3 class="About-us-heading">Address</h3>
+                        <p class="About-us-para">Novel Tech Park, 1st Floor, Hosur Rd, Kudlu gate, Bengaluru, Karnataka 560068
+                            Phone: 0804-717-8999
+                            Email: hi@rubixe.com</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.Rubixe-name {
+    font-size: 30px;
+}
+
+.navbar {
+    font-size: 24px;
+    color: #183b56;
+    font-family: bree serif;
+
+}
+
+.rubixe-logo {
+    margin-top: -5px;
+    height: 40px;
+    width: 40px;
+}
+
+
+
+.nav-link {
+    color: #096f92;
+    font-size: 15px;
+}
+
+.carousel-caption1 {
+    font-family: bree serif;
+    font-size: 35px;
+}
+
+.carousel-caption2 {
+    font-weight: 500;
+}
+
+.tt-logo {
+    margin-bottom: -10px;
+    height: 50%;
+    width: 50%;
+}
+
+.hr-line {
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-top: -10px;
+}
+
+.hr-line-text {
+    margin-top: -10px;
+    font-size: 10px;
+    text-align: center;
+    margin-right: -40px;
+}
+
+.who-we-are-section {
+    background-color: white;
+}
+
+.who-we-are-section-heading {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 28px;
+    color: #183b56;
+}
+
+.who-we-are-customers-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.who-we-are-section-img {
+    width: 270px;
+    margin-bottom: 20px;
+
+}
+
+.where-we-started-section {
+    background-color: #2976f2;
+    color: white;
+}
+
+.where-we-started-section-heading {
+    color: white;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.wcu-section {
+    background-color: white;
+    background-size: cover;
+
+}
+
+.wcu-heading {
+    font-family: Bree Serif;
+    color: #183b56;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.wcu-para {
+    font-family: Roboto;
+    color: #5a7184;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.wcu-card {
+    background-color: white;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #e5eaf4;
+
+}
+
+.wsu-card-img {
+    height: 90px;
+}
+
+.wcu-card-heading {
+    font-family: Roboto;
+    color: #323f4b;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.wcu-card-para {
+    font-family: Roboto;
+    color: #5a7184;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.wcu-card-span {
+    font-weight: 800;
+    color: orange;
+    font-style: italic;
+}
+
+.button {
+    background-color: #dae2ec;
+    font-family: "Roboto";
+    font-size: 18px;
+    width: 33%;
+    border-width: 0;
+    border-radius: 8px;
+}
+
+.selected-button {
+    background-color: white;
+}
+
+.tab-content {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+.button {
+    font-family: Bree Serif;
+    font-weight: 500;
+    margin: 10px;
+    background-color: #187fd9;
+    color: white;
+}
+
+#aboutButton {
+    background-color: white;
+    color: black;
+    border: solid;
+    border-width: 2px;
+}
+
+.tab-content {
+    font-family: Bree Serif;
+    color: #187fd9;
+    font-weight: 200;
+    font-size: 25px;
+    text-align: center;
+}
+
+.icon {
+    text-align: center;
+}
+
+.contact-page {
+    border: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.heading-initiative {
+    font-family: Bree Serif;
+    color: #5f3e75;
+}
+
+.hr-line-contact {
+    border-color: black;
+
+}
+
+.form-heading {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-family: Bree Serif;
+    color: #5f3e75;
+    font-size: 36px;
+}
+
+.errorMessage {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #dc3545;
+}
+
+.contact-page {
+    background-color: #e8e6e1;
+    padding: 30px;
+    margin: 40px;
+    border-width: 0px;
+}
+
+.heading-contact {
+    font-family: Bree Serif;
+    color: #5f3e75;
+}
+
+.follow-us-section {
+    background-color: #daf7f7;
+    color: grey;
+}
+
+.About-us-heading {
+    font-size: 20px;
+}
+
+.About-us-para {
+    font-size: 15px;
+}
+
+.fab {
+    margin-right: 10px;
+}
